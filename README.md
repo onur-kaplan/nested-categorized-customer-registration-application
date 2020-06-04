@@ -1,6 +1,6 @@
 # Nested Categorized Customer Registration Application
 
-You can first create a customer through the registration form and then create contacts of that customer
+You can first create a customer through the registration form and then create contacts of that customer.
 
 ## Installation
 
@@ -18,6 +18,11 @@ npm run dev
 ```python
 npm run build
 ```
+
+## Database (LocalStorage)
+
+Localstorage is used to store the registration
+
 ## Parcel is used for bundle operation
 You should get a URL that looks something like: http://localhost:1234/.
 ```
