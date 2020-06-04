@@ -5,6 +5,9 @@
 body{
   background-color: #f8f9fa;
 }
+.pointer-disabled{
+  pointer-events: none;
+}
 .bg-white {
   background-color: #fff!important;
 }
