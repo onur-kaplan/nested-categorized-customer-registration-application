@@ -1,0 +1,6 @@
+.DS_Store
+node_modules/
+.parcel-cache/
+.cache/
+.idea/
+yarn-error.log

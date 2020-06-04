@@ -1,0 +1,114 @@
+*:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+h4 {
+  color: #000;
+  font-weight: bold;
+}
+
+.bg-purple {
+  background-color: #6f42c1;
+}
+
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.rounded {
+  border-radius: 0.25rem !important;
+}
+
+.header-logo {
+  width: 200px;
+  height: auto;
+}
+
+.w100PX {
+  width: 100px;
+  flex: 0 0 100px;
+}
+
+.card-header-custom {
+  background: #424242;
+  color: #fff;
+}
+
+.victim-box {
+  background: #cfd8dc;
+}
+
+.victim-photo-box {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.victim-info-box {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.victim-mission-complated-btn {
+  position: absolute;
+  right: 36px;
+  top: 32px;
+  z-index: 10;
+}
+
+.card-header {
+  cursor: pointer;
+}
+
+[data-status=true]:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url(https://image.flaticon.com/icons/svg/253/253630.svg) rgba(255, 134, 134, 0.5);
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position: center;
+}
+
+.customer-remove-btn {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  display: block;
+}
+.customer-remove-btn i {
+  pointer-events: none;
+}
+
+.victim-remove-btn {
+  position: absolute;
+  right: 34px;
+  bottom: 34px;
+  z-index: 10;
+  background: #fff;
+  font-size: 12px;
+}
+.victim-remove-btn i {
+  pointer-events: none;
+}
+
+.btn-add-adress {
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+}
+
+/*# sourceMappingURL=/style.97fcb138.css.map */

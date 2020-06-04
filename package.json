@@ -1,0 +1,31 @@
+{
+  "name": "nested-categorized-customer-registration-application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build --public-url '.' index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "cross-env": "^7.0.0",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-clean-dist": "0.0.6",
+    "sass": "^1.26.5"
+  },
+  "dependencies": {
+    "parcel-plugin-static-files-copy": "^2.3.1"
+  },
+  "staticFiles": {
+    "staticPath": [
+      {
+        "outDirPattern": "**/dist",
+        "staticPath": "static"
+      }
+    ]
+  }
+}

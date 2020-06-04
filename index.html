@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.scss">
+
+    <title>Nested Categorized Customer Registration Application</title>
+</head>
+<body>
+<div class="container">
+    <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded shadow-sm">
+        <img class="mr-2" src="./static/img/logo.svg" alt="" width="100" height="100">
+        <div class="lh-100">
+            <h6 class="mb-0 text-white lh-100">Hit Man</h6>
+            <small>Since -∞</small>
+        </div>
+    </div>
+
+    <div class="d-flex align-items-center card-header card-header-custom">
+        <div class="col mr-5 pl-4">Name</div>
+        <div class="col mr-5">Phone</div>
+    </div>
+
+    <div class="accordion" id="customersListContainer"></div>
+
+    <div class="d-flex mt-2">
+        <button type="button" class="btn btn-success ml-auto" data-toggle="modal" data-target="#customerRegisterForm">Add customer <i class="fas fa-user-secret"></i></button>
+    </div>
+</div>
+
+
+
+<!-- Customer  Modal -->
+<div class="modal fade" id="customerRegisterForm" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">New customer</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="customer-name"  placeholder="Name...">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="customer-lastName"  placeholder="Surname...">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" id="customer-phone"  placeholder="Phone...">
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-name="new-customer-btn">Add customer <i class="fas fa-user-secret"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Victim  Modal -->
+<div class="modal fade" id="victimRegisterForm" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">New victim</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="victim-name"  placeholder="Name...">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="victim-lastName"  placeholder="Surname...">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="victim-age"  placeholder="Age...">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <select id="victim-gender" class="form-control">
+                                <option selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="url" class="form-control" id="victim-photo" placeholder="Photo url...">
+                    </div>
+                    <div class="form-group position-relative" id="victim-adress-box">
+                        <input type="text" class="form-control victim-adress mb-2" placeholder="Adress...">
+                        <button class="btn btn-outline-success btn-sm btn-add-adress">Add <i class="fas fa-plus-circle"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger"  data-name="new-victim-btn">Add victim <i class="fas fa-user-plus"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script src="./app.js"></script>
+</body>
+</html>
